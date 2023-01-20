@@ -14,3 +14,6 @@ result = Number(campoOne) + Number(campoTwo);
 
 console.log("Deacuerdo, El resultado de la suma entre estos 2 sumandos ingresados es: " + result, 
 'Hasta pronto!');
+
+console.log("Deacuerdo, El resultado de la suma entre estos 2 sumandos ingresados es: " + result, 
+'Hasta pronto!');
