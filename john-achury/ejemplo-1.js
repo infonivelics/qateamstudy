@@ -10,26 +10,42 @@ if (preguntacampoCero == "SI" || preguntacampoCero == "si" || preguntacampoCero 
 
   if (campoCero == "") {
 
-    console.log('no se ingreso NINGUN nombre gracias por participar');
+    console.log('No se ingreso NINGUN nombre, para continuar con el proceso, vuelva a intentarlo desde el paso 1. !Gracias!');
 
   }
   else {
 
     console.log('hola, ' + campoCero, 'Soy un pequeño algoritmo que hace una suma basica de 2 sumandos y para iniciarla hacer,');
 
-    campoOne = readline.question(`inicie digitando un numero o el sumando #1  `);
+    campoOne = readline.question(`inicie digitando un NUMERO o el sumando #1  `);
 
-    campoTwo = readline.question(`Listo, ahora porfavor, digite el otro numero o el sumando #2  `);
+    if (!campoOne.match(/^\d+$/)) {
 
-    result = Number(campoOne) + Number(campoTwo);
+      console.log('El dato ingresado No es un Numero valido, vuelva a intentarlo desde el paso 1. !Gracias!');
 
-    console.log("Deacuerdo, El resultado de la suma entre estos 2 sumandos ingresados es: " + result, 'Hasta pronto!');
+    }
+    else {
 
+      campoTwo = readline.question(`Listo, ahora porfavor, digite el otro NUMERO o el sumando #2  `);
+
+      if (!campoTwo.match(/^\d+$/)) {
+
+        console.log('El dato ingresado No es un Numero valido, vuelva a intentarlo desde el paso 1. !Gracias!');
+
+      }
+
+      else {
+
+        result = Number(campoOne) + Number(campoTwo);
+
+        console.log("Deacuerdo, El resultado de la suma entre estos 2 sumandos ingresados es: " + result, 'Hasta pronto!');
+
+      }
+    }
   }
-
 }
 
 else {
-  console.log("Como el Nombre o el Nickname es obligatorio y este NO se ingreso, el programa Finaliza... gracias por su tiempo");
+  console.log("Como el Nombre o el Nickname es obligatorio y no se ingreso una opcion valida, el programa Finaliza... gracias por su tiempo");
 
 } 
