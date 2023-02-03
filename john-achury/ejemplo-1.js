@@ -1,12 +1,13 @@
+//trabajo de 2 campos consus respectivas validaciones
 const readline = require('readline-sync');
 
 console.log("Hola Mundo y buenos dias...");
 
-preguntacampoCero = readline.question(`Desea darnos su Nombre o Nickname? marque SI / NO segun corresponda `);
+preguntacampoCero = readline.question(`PASO1: Desea darnos su Nombre o Nickname? marque SI / NO segun corresponda `);
 
 if (preguntacampoCero == "SI" || preguntacampoCero == "si" || preguntacampoCero == "sI" || preguntacampoCero == "Si") {
 
-  campoCero = readline.question(`Porfavor dijite su nombre o Nickname `);
+  campoCero = readline.question(`PASO 2: Porfavor dijite su nombre o Nickname `);
 
   if (campoCero == "") {
 
@@ -15,7 +16,7 @@ if (preguntacampoCero == "SI" || preguntacampoCero == "si" || preguntacampoCero 
   }
   else {
 
-    console.log('hola, ' + campoCero, 'Soy un pequeño algoritmo que hace una suma basica de 2 sumandos y para iniciarla hacer,');
+    console.log('PASO 3: hola, ' + campoCero, 'Soy un pequeño algoritmo que hace una suma basica de 2 sumandos y para iniciarla hacer,');
 
     campoOne = readline.question(`inicie digitando un NUMERO o el sumando #1  `);
 
@@ -26,7 +27,7 @@ if (preguntacampoCero == "SI" || preguntacampoCero == "si" || preguntacampoCero 
     }
     else {
 
-      campoTwo = readline.question(`Listo, ahora porfavor, digite el otro NUMERO o el sumando #2  `);
+      campoTwo = readline.question(`PASO 4: Listo, ahora porfavor, digite el otro NUMERO o el sumando #2  `);
 
       if (!campoTwo.match(/^\d+$/)) {
 
@@ -38,7 +39,7 @@ if (preguntacampoCero == "SI" || preguntacampoCero == "si" || preguntacampoCero 
 
         result = Number(campoOne) + Number(campoTwo);
 
-        console.log("Deacuerdo, El resultado de la suma entre estos 2 sumandos ingresados es: " + result, 'Hasta pronto!');
+        console.log("RESULTADO: El producto de la suma entre estos 2 sumandos ingresados es: " + result, 'Hasta pronto!');
 
       }
     }
