@@ -6,15 +6,17 @@ function aleatorio(min, max){
   }
   
   //llamamos la funcion enviando los dos parametros
-  let primernumero = aleatorio(0,3)
-  let segundonumero = aleatorio(0,3)
+  let primernumero = aleatorio(0,10)
+  let segundonumero = aleatorio(0,10)
   let numeroejecuciones = 0
     alert("primer numero: " + primernumero)
     alert("segundo numero: " + segundonumero)
   
   while(primernumero !== segundonumero){
-    primernumero = aleatorio(0,3)
-    segundonumero = aleatorio(0,3)
+    alert("primer numero: " + primernumero)
+    alert("segundo numero: " + segundonumero)
+    primernumero = aleatorio(0,10)
+    segundonumero = aleatorio(0,10)
     numeroejecuciones = numeroejecuciones + 1     
   }
   
