@@ -1,1 +1,2 @@
 # qateamstudy
+ejemplo mismo archivo
