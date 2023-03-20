@@ -70,7 +70,27 @@ function ataqueAleatorioEnemigo(){
         ataqueEnemigo = 'TIERRA'
     }
 
-    crearMensajes()
+    combate()
+}
+
+function combate(){
+    //COMBATE
+  if (ataqueEnemigo == ataqueJugador){
+    crearMensajes("EMPATARON")
+} else if(ataqueEnemigo == 3 && ataqueJugador == 1){
+    alert("ERES UN CHAMPION")
+
+} else if(ataqueEnemigo == 1 && ataqueJugador == 2){
+    alert("ERES UN CHAMPION")
+
+} else if(ataqueEnemigo == 2 && ataqueJugador == 3){
+    alert("ERES UN CHAMPION")
+
+} else{
+    alert("LOSER")
+    perder = perder + 1
+    //esto es una 
+  }
 }
 
 function crearMensajes(){
